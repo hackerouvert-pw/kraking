@@ -1,0 +1,24 @@
+<% if user_signed_in? %>
+  hello
+  <% @secrets.each do |u| %>
+    <%= u.secret %>
+    <%= u.type %>
+  <% end %>
+<% else %>
+  <h1>AI Powered Security</h1>
+
+  <p>We are VerySecure(c) Ltd. A company focused on AI-powered security. We employ not the best of the best, but the only the very best military grade security operationals to secure <b>your data</b></p>
+
+  <h2>About us</h2>
+
+  <ul>
+    <li>Georg Lukas - CEO</li>
+    <li>Andonio Pesto - CFO</li>
+    <li>Lucy Smith - CISO</li>
+  </ul>
+
+  <h2>Contact</h2>
+
+  <p>For any buisiness inquiries please contact use at getsecuredtoday@hackerouvert.pw</p>
+
+<% end %>
