@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_02_163755) do
+ActiveRecord::Schema.define(version: 2020_08_03_212732) do
 
   create_table "secrets", force: :cascade do |t|
     t.string "secret"
-    t.string "type"
+    t.string "algo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
