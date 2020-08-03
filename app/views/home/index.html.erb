@@ -1,8 +1,12 @@
 <% if user_signed_in? %>
   hello
   <% @secrets.each do |u| %>
-    <%= u.secret %>
-    <%= u.type %>
+    <p>
+    secret: <%= u.secret %>
+    </p>
+    <p>
+    algo: <%= u.algo %>
+    </p>
   <% end %>
 <% else %>
   <h1>AI Powered Security</h1>
